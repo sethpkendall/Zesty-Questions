@@ -11,4 +11,9 @@
     {{/each}}
   </ul>
 
+  <ul>
+    {{#each model.answers as |answer|}}
+      <li>{{answer.content}} - by {{answer.author}}</li>
+    {{/each}}
+  </ul>
 </div>
