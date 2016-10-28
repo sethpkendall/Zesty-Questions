@@ -5,7 +5,7 @@
         <h2>{{model.question.content}}</h2>
         <h5>by {{model.question.author}}</h5>
         <h4>{{model.question.notes}}</h4>
-        {{update-question question=model.question update="updateToDb"}}
+        {{update-question question=model.question update="updateToDb" destroyQuestion="destroyQuestion"}}
       </div>
     </div>
   </div>
