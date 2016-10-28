@@ -1,6 +1,9 @@
 <div class="container">
+  <div class="jumbotron">
+    <h1> New Question: </h1>
+    {{new-question saveQuestion="questionToDb"}}
+  </div>
 
-  <h1> Test </h1>
 
   <ul>
     {{#each model as |question|}}
