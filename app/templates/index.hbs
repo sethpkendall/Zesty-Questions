@@ -3,17 +3,9 @@
     <h1> New Question: </h1>
     {{new-question saveQuestion="questionToDb"}}
   </div>
-
-
   <ul>
     {{#each model.questions as |question|}}
        {{#link-to 'question' question.id}}<li>{{question.content}} - {{question.author}}</li>{{/link-to}}
-    {{/each}}
-  </ul>
-
-  <ul>
-    {{#each model.answers as |answer|}}
-      <li>{{answer.content}} - by {{answer.author}}</li>
     {{/each}}
   </ul>
 </div>
