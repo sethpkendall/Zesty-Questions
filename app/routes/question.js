@@ -20,7 +20,7 @@ export default Ember.Route.extend({
         }
       });
       question.save();
-      this.set('updateQuestionForm',false);
+      this.set('updateQuestionForm', false);
       this.transitionTo('index');
     },
     saveAnswer(params){

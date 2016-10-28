@@ -1,6 +1,9 @@
 body{
   background-color: #19bdff;
 }
+a:hover{
+  text-decoration:none;
+}
 .jumbotron{
   background-color: #19bdff;
   border: 5px solid white;
@@ -17,9 +20,6 @@ body{
     margin-right: 35px;
     color: white;
   }
-}
-a:hover{
-  text-decoration:none;
 }
 .pageTitle{
   font-family: 'Rock Salt', cursive;

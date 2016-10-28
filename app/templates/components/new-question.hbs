@@ -1,12 +1,9 @@
 <form>
   <label for="content">What is yor Question?</label>
   {{input class="form-control" value=content id="content"}}
-
   <label for="author">Who is the Author?</label>
   {{input value=author id="author" class="form-control"}}
-
   <label for="notes">Any further notes:</label>
   {{input value=notes id="notes" class="form-control"}}
-
   <button class="btn btn-primary" {{action "addQuestion"}}>Submit Question!</button>
 </form>
