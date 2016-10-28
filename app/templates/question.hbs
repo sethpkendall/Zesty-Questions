@@ -3,9 +3,9 @@
     <div class="col-xs-6 col-xs-offset-3">
       <div class="jumbotron">
         <h2>{{model.content}}</h2>
+        <h5>by {{model.author}}</h5>
         <h4>{{model.notes}}</h4>
-        <button class="btn btn-info" {{action 'editQuestion' model}}>Edit</button>
-        <button class="btn btn-danger" {{action 'destroyQuestion' model}}>Delete</button>
+        {{update-question question=model update="updateToDb"}}
       </div>
     </div>
   </div>

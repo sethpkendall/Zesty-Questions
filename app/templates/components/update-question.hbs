@@ -1,0 +1,22 @@
+<div>
+  <button class="btn btn-info" {{action 'updateQuestionForm'}}>Edit</button>
+  <button class="btn btn-danger" {{action 'destroyQuestion' model}}>Delete</button>
+  {{#if updatingQuestionForm}}
+    <h4>Update {{question.author}}'s question</h4>
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author class="form-control" id="author placeholder=model.author"}}
+      </div>
+      <div class="form-group">
+        <label for="content">Question</label>
+        {{input value=content class="form-control" id="content placeholder=model.content"}}
+      </div>
+      <div class="form-group">
+        <label for="notes">Further Notes</label>
+        {{input value=notes class="form-control" id="notes placeholder=model.notes"}}
+      </div>
+      <button class="btn btn-primary" {{action 'update' question}}>Save</button>
+    </form>
+  {{/if}}
+</div>
