@@ -1,1 +1,5 @@
-{{outlet}}
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.owner}}'s {{question.type}} in {{question.city}}</li>
+  {{/each}}
+</ul>
