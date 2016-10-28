@@ -1,7 +1,10 @@
-# Question-board
+# _Zesty Questions_
+###_Epicodus javascript Code Review for week 3, 10.28.2016_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### By _Seth Kendall_
+
+##Description
+_This product is designed to take in questions with associated notes and save them to the page. It then allows other users to visit the page and post answers to posted questions._
 
 ## Prerequisites
 
@@ -15,7 +18,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/sethpkendall/question-board`
 * `cd question-board`
 * `npm install`
 * `bower install`
@@ -39,10 +42,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
@@ -51,3 +50,8 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Licensing
+
+*This product can be used in accordance with the provisions under its MIT license.*
+
+copyright (c) 2016 **_Seth Kendall_**

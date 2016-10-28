@@ -1,11 +1,14 @@
 <div class="container">
+  <h1 class="pageTitle">Zesty Questions</h1>
   <div class="jumbotron">
-    <h1> New Question: </h1>
+    <h3> New Question: </h3>
     {{new-question saveQuestion="questionToDb"}}
   </div>
-  <ul>
-    {{#each model.questions as |question|}}
-       {{#link-to 'question' question.id}}<li>{{question.content}} - {{question.author}}</li>{{/link-to}}
-    {{/each}}
-  </ul>
+  <div class="subsection">
+    <ul>
+      {{#each model.questions as |question|}}
+         {{#link-to 'question' question.id}}<li class="subsectionBullet">{{question.content}} - {{question.author}}</li>{{/link-to}}
+      {{/each}}
+    </ul>
+  </div>
 </div>
