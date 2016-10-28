@@ -1,1 +1,12 @@
-{{outlet}}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <div class="jumbotron">
+        <h2>{{model.content}}</h2>
+        <h4>{{model.notes}}</h4>
+        <button class="btn btn-info" {{action 'editQuestion' model}}>Edit</button>
+        <button class="btn btn-danger" {{action 'destroyQuestion' model}}>Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
