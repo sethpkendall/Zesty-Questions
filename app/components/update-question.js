@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  myQuestions: Ember.inject.service(),
   updatingQuestionForm: false,
   actions:{
     updateQuestionForm() {
@@ -18,6 +19,9 @@ export default Ember.Component.extend({
       if(confirm('Are you sure you want to delete this question?')) {
         this.sendAction('destroyQuestion', question);
       }
+    },
+    save(question) {
+      this.get('myQuestions').add(question);
     }
   }
 });

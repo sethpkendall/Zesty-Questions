@@ -1,6 +1,7 @@
 <div>
   <button class="btn btn-primary" {{action 'updateQuestionForm'}}>Edit</button>
   <button class="btn btn-danger" {{action 'delete' question}}>Delete</button>
+  <button class="btn btn-primary" {{action 'save' question}}>Save</button>
   {{#if updatingQuestionForm}}
     <h4>Update {{question.author}}'s question</h4>
     <form>
