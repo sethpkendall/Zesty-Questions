@@ -13,7 +13,7 @@
     <div class="col-xs-6 col-xs-offset-3 subsection">
       {{no-answers model.question.answers}}
       {{new-answer saveAnswer="saveAnswer" question=model.question}}
-      {{answer-list answers=model.question.answers}}
+      {{answer-list voteUp="voteUp" voteDown="voteDown" answers=model.question.answers}}
     </div>
   </div>
 </div>
