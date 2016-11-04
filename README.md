@@ -4,7 +4,7 @@
 #### By _Seth Kendall_
 
 ##Description
-_This product is designed to take in questions with associated notes and save them to the page. It then allows other users to visit the page and post answers to posted questions. Users can also vote to grant or subtract a point from existing answers to increase or decrease respectively the answer's visibility. Additionally users can save _
+This product is designed to take in questions with associated notes and save them to the page. It then allows other users to visit the page and post answers to posted questions. Users can also vote to grant or subtract a point from existing answers to increase or decrease respectively the answer's visibility. Additionally users can save
 
 ## Prerequisites
 
