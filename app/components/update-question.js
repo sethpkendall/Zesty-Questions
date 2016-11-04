@@ -13,6 +13,10 @@ export default Ember.Component.extend({
         content: this.get('content'),
         notes: this.get('notes')
       };
+      this.set('author', '');
+      this.set('content', '');
+      this.set('notes', '');
+      this.set('updatingQuestionForm', false);
       this.sendAction('update', question, params);
     },
     delete(question) {
@@ -22,6 +26,9 @@ export default Ember.Component.extend({
     },
     save(question) {
       this.get('myQuestions').add(question);
+    },
+    cancelUpdate() {
+      this.set('updatingQuestionForm', false);
     }
   }
 });

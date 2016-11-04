@@ -1,1 +1,15 @@
-{{yield}}
+<div class="container">
+  <div class="subsection">
+    <h3>Saved Questions:</h3>
+    {{#if myQuestions.questions}}
+      <ul>
+        {{#each myQuestions.questions as |question|}}
+          {{#link-to 'question' question.id}}<li class="subsectionBullet">{{question.author}} - {{question.content}}</li>{{/link-to}}
+        {{/each}}
+      </ul>
+    {{else}}
+      <p>No questions saved!</p>
+      {{#link-to 'index'}}<p id="savedQuestionsLink"><u>Browse questions now</u></p>{{/link-to}}
+    {{/if}}
+  </div>
+</div>

@@ -1,10 +1,10 @@
-# _Zesty Questions_
-### _Epicodus javascript Code Review for week 3, 10.28.2016_
+# _Zesty Questions 2.0_
+### _Epicodus javascript Code Review for week 4, 11.4.2016_
 
 #### By _Seth Kendall_
 
 ##Description
-_This product is designed to take in questions with associated notes and save them to the page. It then allows other users to visit the page and post answers to posted questions._
+_This product is designed to take in questions with associated notes and save them to the page. It then allows other users to visit the page and post answers to posted questions. Users can also vote to grant or subtract a point from existing answers to increase or decrease respectively the answer's visibility. Additionally users can save _
 
 ## Prerequisites
 

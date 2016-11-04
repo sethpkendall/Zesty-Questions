@@ -13,9 +13,13 @@ export default Ember.Component.extend({
         question: this.get('question'),
         votes: 0
       };
-      console.log(params.question);
+      this.set('author', '');
+      this.set('content', '');
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);
+    },
+    cancelNew(){
+      this.set('addNewAnswer', false);
     }
   }
 });
