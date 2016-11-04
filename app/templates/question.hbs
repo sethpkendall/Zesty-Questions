@@ -11,12 +11,9 @@
   </div>
   <div class="row">
     <div class="col-xs-6 col-xs-offset-3 subsection">
+      {{no-answers model.question.answers}}
       {{new-answer saveAnswer="saveAnswer" question=model.question}}
-      <ul>
-        {{#each model.question.answers as |answer|}}
-          <li class="subsectionBullet">{{answer.content}} - by {{answer.author}}</li>
-        {{/each}}
-      </ul>
+      {{answer-list answers=model.question.answers}}
     </div>
   </div>
 </div>
