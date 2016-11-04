@@ -1,5 +1,5 @@
 <ul>
-  {{#each answers as |answer|}}
+  {{#each sortedAnswers as |answer|}}
     <li class="subsectionBullet">({{answer.votes}}){{answer.content}} - by {{answer.author}}<button {{action 'voteUp' answer}} class="voteButton btn btn-default btn-xs"><span class="glyphicon glyphicon-arrow-up"></span></button><button {{action 'voteDown' answer}} class="btn btn-default btn-xs"><span class="glyphicon glyphicon-arrow-down"></span></button></li>
   {{/each}}
 </ul>
