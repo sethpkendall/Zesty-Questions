@@ -28,6 +28,9 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit the app at [http://localhost:4200](http://localhost:4200).
 
+## Contact Information
+Contact me at sethpkendall@gmail.com
+
 ## Licensing
 
 *This product can be used in accordance with the provisions under its MIT license.*
